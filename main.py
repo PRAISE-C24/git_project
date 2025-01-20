@@ -22,7 +22,8 @@ def make_a_guess():
            print(f"{guess} is Not a valid Guess!")
            continue
 
-        """check if guess is either lower or higher the the number, then start over again, but if guess is correct you exit the game """
+        """check if guess is either lower or higher the the number, then start over again, but if guess is correct you exit the game 
+        """
         if guess > number:
             print(f"{guess} is too High!")
         elif guess < number:
