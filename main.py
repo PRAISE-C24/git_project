@@ -44,7 +44,7 @@ def make_a_guess():
 principal = 0
 rate = 0
 time = 0
-is_true = True
+is_true = False
 
 
 '''this function is to catch any ValueError exception from the user input'''
@@ -90,14 +90,12 @@ while is_true:
 
 total = principal * pow((1 + rate / 100), time)
 
-print(f"Balance after {time} year/s is: ${total:.2f}")
+#print(f"Balance after {time} year/s is: ${total:.2f}")
 
 """
  Feature 3.
  this third feature is simple Rock, Paper, Scissors game.
 """
-
-import random
 
 option = ("rock", "paper", "scissors")
 play_on = True
