@@ -124,3 +124,41 @@ while play_on:
             play_on = False
 
 print("Thanks for playing")
+
+"""
+ Feature 4.
+ this is the fourth feature we are about to add.
+"""
+
+class Person:
+
+    def __init__(self, first_name, last_name, age):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+
+    def greet(self):
+        print(f"Hello! my name is {self.first_name} {self.last_name}, I'm glad to be here.🖐")
+
+    def __str__(self):
+        print(f"FirstName is {self.first_name}, LastName is {self.last_name}, Age is {self.age}")
+
+
+class Student(Person):
+
+    def __init__(self, first_name, last_name, age, year):
+        super().__init__(first_name, last_name, age)
+        self.year = year
+
+    def welcome(self):
+        print(f"Welcome {p1.first_name} {p1.last_name} to the class of {self.year}🙋‍♂️🙋‍♀️")
+
+
+p1 = Student("Josh", "Bobs", 28, 2025)
+print(
+    f"My name is {p1.first_name}, I am {p1.age} years old, My graduation year is {p1.year}"
+)
+print()
+p1.greet()
+print()
+p1.welcome()
