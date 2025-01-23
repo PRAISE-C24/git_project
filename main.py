@@ -98,7 +98,7 @@ total = principal * pow((1 + rate / 100), time)
 """
 
 option = ("rock", "paper", "scissors")
-play_on = True
+play_on = False
 
 while play_on:
     player = ''
@@ -123,11 +123,11 @@ while play_on:
         if not input("Do you want to play on? (Y/N): ").lower() == "y":
             play_on = False
 
-print("Thanks for playing")
+#print("Thanks for playing")
 
 """
  Feature 4.
- this is the fourth feature we are about to add.
+ this is an Object class to show case inheritance from Person super class to Student class.
 """
 
 class Person:
@@ -151,14 +151,16 @@ class Student(Person):
         self.year = year
 
     def welcome(self):
-        print(f"Welcome {p1.first_name} {p1.last_name} to the class of {self.year}🙋‍♂️🙋‍♀️")
+        print(f"Welcome {self.first_name} {self.last_name} to the class of {self.year}🙋‍♂️🙋‍♀️")
 
 
 p1 = Student("Josh", "Bobs", 28, 2025)
-print(
-    f"My name is {p1.first_name}, I am {p1.age} years old, My graduation year is {p1.year}"
-)
+
+p2 = Student("Matt", "Luks", 32, 2028)
+
 print()
 p1.greet()
-print()
 p1.welcome()
+print()
+p2.greet()
+p2.welcome()
